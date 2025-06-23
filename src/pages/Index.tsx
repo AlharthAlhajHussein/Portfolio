@@ -1,54 +1,45 @@
-
 import { Github, Linkedin, Mail, Phone, MapPin, Calendar, ExternalLink, Award, BookOpen, Users, Trophy, Code, Database } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-
 const Index = () => {
-  const projects = [
-    {
-      title: "Toxic Comment Classification",
-      description: "Multi-label toxic comment classifier using Bi-LSTM with Attention and pre-trained GloVe embeddings",
-      tech: ["TensorFlow", "Python", "LSTM", "NLP"],
-      metrics: "ROC AUC: 0.977",
-      github: "https://github.com/AlharthAlhajHussein/Classify-Toxic-Comment-by-Bi-LSTM-with-Attention-and-Glove-Embedding",
-      highlights: ["Real-time GUI integration", "6 toxicity categories", "Advanced attention mechanism"]
-    },
-    {
-      title: "Arabic Letters Audio Recognition",
-      description: "SVM-based Arabic letter classification from audio inputs with advanced feature extraction",
-      tech: ["Scikit-learn", "Librosa", "Python", "SVM"],
-      metrics: "63% accuracy on 1,400 samples",
-      github: "https://github.com/AlharthAlhajHussein/Classifying-Arabic-Letters-From-Audio-Dataset-Using-SVM",
-      highlights: ["MFCC feature extraction", "Real-time recording GUI", "Advanced audio processing"]
-    },
-    {
-      title: "Data Science Salaries Analysis",
-      description: "Comprehensive EDA with interactive Power BI dashboards analyzing compensation drivers",
-      tech: ["Power BI", "Python", "Data Analysis", "Visualization"],
-      metrics: "1000+ salary records analyzed",
-      github: "https://github.com/AlharthAlhajHussein/EDA-For-Data-Science-Job-Salaries",
-      highlights: ["5+ interactive dashboards", "Experience-skill correlation", "Market insights"]
-    },
-    {
-      title: "Diamond Price Prediction",
-      description: "Random Forest model with feature engineering for accurate diamond price forecasting (Applied during SHAI For AI training)",
-      tech: ["Scikit-learn", "Random Forest", "Feature Engineering"],
-      metrics: "94% accuracy, 9.4% RMSE reduction",
-      github: "https://github.com/AlharthAlhajHussein/Diamond-Price-Predictions-Model",
-      highlights: ["50K+ entries processed", "Automated outlier removal", "Feature optimization"]
-    },
-    {
-      title: "Music Genre Classification",
-      description: "Ensemble stacking model combining Random Forest, SVC, and KNN for genre prediction (Applied during SHAI For AI training)",
-      tech: ["Scikit-learn", "Ensemble Methods", "K-means", "Feature Engineering"],
-      metrics: "13% F1-score improvement",
-      github: "https://github.com/AlharthAlhajHussein/Music-Genre-Classification-Model",
-      highlights: ["14K+ tracks analyzed", "18% minority-class recall boost", "Advanced clustering"]
-    }
-  ];
-
+  const projects = [{
+    title: "Toxic Comment Classification",
+    description: "Multi-label toxic comment classifier using Bi-LSTM with Attention and pre-trained GloVe embeddings",
+    tech: ["TensorFlow", "Python", "LSTM", "NLP"],
+    metrics: "ROC AUC: 0.977",
+    github: "https://github.com/AlharthAlhajHussein/Classify-Toxic-Comment-by-Bi-LSTM-with-Attention-and-Glove-Embedding",
+    highlights: ["Real-time GUI integration", "6 toxicity categories", "Advanced attention mechanism"]
+  }, {
+    title: "Arabic Letters Audio Recognition",
+    description: "SVM-based Arabic letter classification from audio inputs with advanced feature extraction",
+    tech: ["Scikit-learn", "Librosa", "Python", "SVM"],
+    metrics: "63% accuracy on 1,400 samples",
+    github: "https://github.com/AlharthAlhajHussein/Classifying-Arabic-Letters-From-Audio-Dataset-Using-SVM",
+    highlights: ["MFCC feature extraction", "Real-time recording GUI", "Advanced audio processing"]
+  }, {
+    title: "Data Science Salaries Analysis",
+    description: "Comprehensive EDA with interactive Power BI dashboards analyzing compensation drivers",
+    tech: ["Power BI", "Python", "Data Analysis", "Visualization"],
+    metrics: "1000+ salary records analyzed",
+    github: "https://github.com/AlharthAlhajHussein/EDA-For-Data-Science-Job-Salaries",
+    highlights: ["5+ interactive dashboards", "Experience-skill correlation", "Market insights"]
+  }, {
+    title: "Diamond Price Prediction",
+    description: "Random Forest model with feature engineering for accurate diamond price forecasting (Applied during SHAI For AI training)",
+    tech: ["Scikit-learn", "Random Forest", "Feature Engineering"],
+    metrics: "94% accuracy, 9.4% RMSE reduction",
+    github: "https://github.com/AlharthAlhajHussein/Diamond-Price-Predictions-Model",
+    highlights: ["50K+ entries processed", "Automated outlier removal", "Feature optimization"]
+  }, {
+    title: "Music Genre Classification",
+    description: "Ensemble stacking model combining Random Forest, SVC, and KNN for genre prediction (Applied during SHAI For AI training)",
+    tech: ["Scikit-learn", "Ensemble Methods", "K-means", "Feature Engineering"],
+    metrics: "13% F1-score improvement",
+    github: "https://github.com/AlharthAlhajHussein/Music-Genre-Classification-Model",
+    highlights: ["14K+ tracks analyzed", "18% minority-class recall boost", "Advanced clustering"]
+  }];
   const skills = {
     "Programming": ["Python", "C++", "Java", "SQL", "HTML/CSS"],
     "ML/AI": ["TensorFlow", "Scikit-learn", "PyTorch", "Computer Vision", "NLP"],
@@ -56,16 +47,24 @@ const Index = () => {
     "Tools": ["Git", "MySQL", "VS Code", "Kaggle", "Google Colab"],
     "Frameworks": ["Django", "PyQt5", "Web Development"]
   };
-
-  const achievements = [
-    { icon: Award, title: "SHAI For AI Training", desc: "6-month intensive Data Science program" },
-    { icon: Trophy, title: "Kaggle Competitions", desc: "Ranked participant in multiple competitions" },
-    { icon: BookOpen, title: "Problem Solving", desc: "150+ programming challenges solved" },
-    { icon: Users, title: "Blue Bits Team", desc: "Authored 30+ lecture notes for 50+ students" }
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+  const achievements = [{
+    icon: Award,
+    title: "SHAI For AI Training",
+    desc: "6-month intensive Data Science program"
+  }, {
+    icon: Trophy,
+    title: "Kaggle Competitions",
+    desc: "Ranked participant in multiple competitions"
+  }, {
+    icon: BookOpen,
+    title: "Problem Solving",
+    desc: "150+ programming challenges solved"
+  }, {
+    icon: Users,
+    title: "Blue Bits Team",
+    desc: "Authored 30+ lecture notes for 50+ students"
+  }];
+  return <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       {/* Hero Section */}
       <section className="relative py-20 px-6 text-center bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 text-white">
         <div className="absolute inset-0 bg-black/20"></div>
@@ -76,10 +75,7 @@ const Index = () => {
           <p className="text-xl mb-6 opacity-90">
             Data Scientist & Informatics Engineer
           </p>
-          <p className="text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
-            Passionate about building end-to-end Machine Learning solutions with 5+ projects 
-            demonstrating expertise in TensorFlow, Scikit-learn, and advanced data analysis.
-          </p>
+          <p className="text-lg mb-8 max-w-2xl mx-auto leading-relaxed">Passionate about building end-to-end Machine Learning solutions with 5+ projects demonstrating expertise in Keras and TensorFlow, Scikit-learn, and advanced data analysis.</p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <Badge variant="secondary" className="px-4 py-2 text-sm">
               5+ ML Projects
@@ -152,8 +148,7 @@ const Index = () => {
               </div>
             </div>
             <div className="grid grid-cols-1 gap-4">
-              {achievements.map((achievement, index) => (
-                <Card key={index} className="hover:shadow-md transition-shadow">
+              {achievements.map((achievement, index) => <Card key={index} className="hover:shadow-md transition-shadow">
                   <CardContent className="flex items-center gap-4 p-4">
                     <achievement.icon className="h-8 w-8 text-blue-600" />
                     <div>
@@ -161,8 +156,7 @@ const Index = () => {
                       <p className="text-sm text-gray-600">{achievement.desc}</p>
                     </div>
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </div>
         </div>
@@ -222,11 +216,9 @@ const Index = () => {
                     </ul>
                     <h4 className="font-semibold text-gray-800 mb-3 mt-4">Technologies Mastered:</h4>
                     <div className="flex flex-wrap gap-1">
-                      {["NumPy", "Pandas", "Matplotlib", "Seaborn", "Scikit-learn"].map((tech, i) => (
-                        <Badge key={i} variant="outline" className="text-xs">
+                      {["NumPy", "Pandas", "Matplotlib", "Seaborn", "Scikit-learn"].map((tech, i) => <Badge key={i} variant="outline" className="text-xs">
                           {tech}
-                        </Badge>
-                      ))}
+                        </Badge>)}
                     </div>
                   </div>
                 </div>
@@ -241,8 +233,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Featured Projects</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((project, index) => (
-              <Card key={index} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            {projects.map((project, index) => <Card key={index} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <CardHeader>
                   <CardTitle className="text-lg">{project.title}</CardTitle>
                   <CardDescription>{project.description}</CardDescription>
@@ -250,22 +241,18 @@ const Index = () => {
                 <CardContent>
                   <div className="space-y-4">
                     <div className="flex flex-wrap gap-1">
-                      {project.tech.map((tech, i) => (
-                        <Badge key={i} variant="outline" className="text-xs">
+                      {project.tech.map((tech, i) => <Badge key={i} variant="outline" className="text-xs">
                           {tech}
-                        </Badge>
-                      ))}
+                        </Badge>)}
                     </div>
                     <div className="bg-green-50 p-2 rounded text-sm font-medium text-green-700">
                       {project.metrics}
                     </div>
                     <ul className="text-sm text-gray-600 space-y-1">
-                      {project.highlights.map((highlight, i) => (
-                        <li key={i} className="flex items-start gap-2">
+                      {project.highlights.map((highlight, i) => <li key={i} className="flex items-start gap-2">
                           <span className="w-1 h-1 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
                           {highlight}
-                        </li>
-                      ))}
+                        </li>)}
                     </ul>
                     <Button variant="outline" size="sm" className="w-full" asChild>
                       <a href={project.github} target="_blank" rel="noopener noreferrer">
@@ -275,8 +262,7 @@ const Index = () => {
                     </Button>
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -286,22 +272,18 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Technical Skills</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {Object.entries(skills).map(([category, skillList], index) => (
-              <Card key={index} className="hover:shadow-md transition-shadow">
+            {Object.entries(skills).map(([category, skillList], index) => <Card key={index} className="hover:shadow-md transition-shadow">
                 <CardHeader>
                   <CardTitle className="text-lg text-blue-700">{category}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
-                    {skillList.map((skill, i) => (
-                      <Badge key={i} className="bg-blue-100 text-blue-800 hover:bg-blue-200">
+                    {skillList.map((skill, i) => <Badge key={i} className="bg-blue-100 text-blue-800 hover:bg-blue-200">
                         {skill}
-                      </Badge>
-                    ))}
+                      </Badge>)}
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -329,11 +311,9 @@ const Index = () => {
                   <div>
                     <h4 className="font-medium">Relevant Coursework:</h4>
                     <div className="flex flex-wrap gap-1 mt-2">
-                      {["AI", "Computer Vision", "NLP", "Deep Learning", "Software Engineering"].map((course, i) => (
-                        <Badge key={i} variant="outline" className="text-xs">
+                      {["AI", "Computer Vision", "NLP", "Deep Learning", "Software Engineering"].map((course, i) => <Badge key={i} variant="outline" className="text-xs">
                           {course}
-                        </Badge>
-                      ))}
+                        </Badge>)}
                     </div>
                   </div>
                 </div>
@@ -472,8 +452,6 @@ const Index = () => {
           © 2024 Alharth Alhaj Hussein. Built with passion for data science and machine learning.
         </p>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
