@@ -1,8 +1,9 @@
 
-import { Github, Linkedin, Mail, Phone, MapPin, Calendar, ExternalLink, Award, BookOpen, Users } from "lucide-react";
+import { Github, Linkedin, Mail, Phone, MapPin, Calendar, ExternalLink, Award, BookOpen, Users, Trophy, Code, Database } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const Index = () => {
   const projects = [
@@ -32,7 +33,7 @@ const Index = () => {
     },
     {
       title: "Diamond Price Prediction",
-      description: "Random Forest model with feature engineering for accurate diamond price forecasting",
+      description: "Random Forest model with feature engineering for accurate diamond price forecasting (Applied during SHAI For AI training)",
       tech: ["Scikit-learn", "Random Forest", "Feature Engineering"],
       metrics: "94% accuracy, 9.4% RMSE reduction",
       github: "https://github.com/AlharthAlhajHussein/Diamond-Price-Predictions-Model",
@@ -40,7 +41,7 @@ const Index = () => {
     },
     {
       title: "Music Genre Classification",
-      description: "Ensemble stacking model combining Random Forest, SVC, and KNN for genre prediction",
+      description: "Ensemble stacking model combining Random Forest, SVC, and KNN for genre prediction (Applied during SHAI For AI training)",
       tech: ["Scikit-learn", "Ensemble Methods", "K-means", "Feature Engineering"],
       metrics: "13% F1-score improvement",
       github: "https://github.com/AlharthAlhajHussein/Music-Genre-Classification-Model",
@@ -51,15 +52,16 @@ const Index = () => {
   const skills = {
     "Programming": ["Python", "C++", "Java", "SQL", "HTML/CSS"],
     "ML/AI": ["TensorFlow", "Scikit-learn", "PyTorch", "Computer Vision", "NLP"],
-    "Data Science": ["Pandas", "NumPy", "Matplotlib", "Power BI", "Data Analysis"],
+    "Data Science": ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Power BI", "Data Analysis"],
     "Tools": ["Git", "MySQL", "VS Code", "Kaggle", "Google Colab"],
     "Frameworks": ["Django", "PyQt5", "Web Development"]
   };
 
   const achievements = [
-    { icon: Award, title: "Kaggle Competitions", desc: "Ranked participant in multiple competitions" },
+    { icon: Award, title: "SHAI For AI Training", desc: "6-month intensive Data Science program" },
+    { icon: Trophy, title: "Kaggle Competitions", desc: "Ranked participant in multiple competitions" },
     { icon: BookOpen, title: "Problem Solving", desc: "150+ programming challenges solved" },
-    { icon: Users, title: "Blue Bits Team", desc: "Authored 20+ lecture notes for 50+ students" }
+    { icon: Users, title: "Blue Bits Team", desc: "Authored 30+ lecture notes for 50+ students" }
   ];
 
   return (
@@ -83,6 +85,9 @@ const Index = () => {
               5+ ML Projects
             </Badge>
             <Badge variant="secondary" className="px-4 py-2 text-sm">
+              SHAI For AI Graduate
+            </Badge>
+            <Badge variant="secondary" className="px-4 py-2 text-sm">
               Kaggle Competitor
             </Badge>
             <Badge variant="secondary" className="px-4 py-2 text-sm">
@@ -90,13 +95,17 @@ const Index = () => {
             </Badge>
           </div>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button variant="outline" size="lg" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
-              <Mail className="mr-2 h-4 w-4" />
-              Contact Me
+            <Button variant="outline" size="lg" className="bg-white/10 border-white/20 text-white hover:bg-white/20" asChild>
+              <a href="mailto:alharth.alhaj.hussein@gmail.com">
+                <Mail className="mr-2 h-4 w-4" />
+                Contact Me
+              </a>
             </Button>
-            <Button variant="outline" size="lg" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
-              <Github className="mr-2 h-4 w-4" />
-              View Projects
+            <Button variant="outline" size="lg" className="bg-white/10 border-white/20 text-white hover:bg-white/20" asChild>
+              <a href="https://github.com/AlharthAlhajHussein?tab=repositories" target="_blank" rel="noopener noreferrer">
+                <Github className="mr-2 h-4 w-4" />
+                View Projects
+              </a>
             </Button>
           </div>
         </div>
@@ -108,10 +117,20 @@ const Index = () => {
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">About Me</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
+              <div className="flex items-center gap-6 mb-6">
+                <Avatar className="h-24 w-24">
+                  <AvatarImage src="/lovable-uploads/6e85f4bb-1d54-4a54-9eee-33cb760b0ba8.png" alt="Alharth Alhaj Hussein" />
+                  <AvatarFallback>AH</AvatarFallback>
+                </Avatar>
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-800">Alharth Alhaj Hussein</h3>
+                  <p className="text-gray-600">Data Scientist & Informatics Engineer</p>
+                </div>
+              </div>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 I'm a passionate Data Scientist and Informatics Engineering student with a strong foundation 
-                in Machine Learning and AI. My expertise spans from building sophisticated neural networks 
-                to developing real-time applications with intuitive user interfaces.
+                in Machine Learning and AI. Completed a comprehensive 6-month training program at SHAI For AI 
+                company, gaining expertise in data preprocessing, model selection, fine-tuning, and production deployment.
               </p>
               <div className="grid grid-cols-2 gap-4 text-sm">
                 <div className="flex items-center gap-2">
@@ -149,8 +168,76 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Projects Section */}
+      {/* Professional Experience */}
       <section className="py-16 px-6 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Professional Experience</h2>
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Database className="h-6 w-6 text-blue-600" />
+                Data Science Training - SHAI For AI Company
+              </CardTitle>
+              <CardDescription className="text-sm text-gray-500">6-Month Intensive Program</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                <p className="text-gray-700 leading-relaxed">
+                  Completed comprehensive training in data science methodologies and production-ready ML systems.
+                  Gained hands-on experience with the complete machine learning pipeline from data preprocessing to deployment.
+                </p>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-3">Core Learning Areas:</h4>
+                    <ul className="space-y-2 text-sm text-gray-600">
+                      <li className="flex items-start gap-2">
+                        <span className="w-1 h-1 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
+                        Raw data preprocessing and feature engineering
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="w-1 h-1 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
+                        Model selection and evaluation techniques
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="w-1 h-1 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
+                        Hyperparameter tuning and optimization
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="w-1 h-1 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
+                        Production deployment and system integration
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-3">Applied Projects:</h4>
+                    <ul className="space-y-2 text-sm text-gray-600">
+                      <li className="flex items-start gap-2">
+                        <span className="w-1 h-1 bg-green-600 rounded-full mt-2 flex-shrink-0"></span>
+                        Music Genre Classification Model
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="w-1 h-1 bg-green-600 rounded-full mt-2 flex-shrink-0"></span>
+                        Diamond Price Prediction Model
+                      </li>
+                    </ul>
+                    <h4 className="font-semibold text-gray-800 mb-3 mt-4">Technologies Mastered:</h4>
+                    <div className="flex flex-wrap gap-1">
+                      {["NumPy", "Pandas", "Matplotlib", "Seaborn", "Scikit-learn"].map((tech, i) => (
+                        <Badge key={i} variant="outline" className="text-xs">
+                          {tech}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Featured Projects</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -195,7 +282,7 @@ const Index = () => {
       </section>
 
       {/* Skills Section */}
-      <section className="py-16 px-6">
+      <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Technical Skills</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -220,7 +307,7 @@ const Index = () => {
       </section>
 
       {/* Education & Certifications */}
-      <section className="py-16 px-6 bg-gray-50">
+      <section className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Education & Certifications</h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -263,6 +350,10 @@ const Index = () => {
               <CardContent>
                 <div className="space-y-4">
                   <div className="border-l-4 border-blue-500 pl-4">
+                    <h3 className="font-semibold">SHAI For AI Data Science Training</h3>
+                    <p className="text-sm text-gray-600">6-Month Professional Program</p>
+                  </div>
+                  <div className="border-l-4 border-green-500 pl-4">
                     <h3 className="font-semibold">Machine Learning Specialization</h3>
                     <p className="text-sm text-gray-600">Coursera - Stanford/DeepLearning.AI</p>
                   </div>
@@ -270,10 +361,58 @@ const Index = () => {
                     <h3 className="font-semibold">Deep Learning Specialization</h3>
                     <p className="text-sm text-gray-600">Coursera - Stanford/DeepLearning.AI</p>
                   </div>
+                  <div className="border-l-4 border-orange-500 pl-4">
+                    <h3 className="font-semibold">Blue Bits Volunteering Certificate</h3>
+                    <p className="text-sm text-gray-600">Educational Content Creation</p>
+                  </div>
+                  <Button variant="outline" size="sm" className="w-full mt-4" asChild>
+                    <a href="https://drive.google.com/drive/folders/1-62BO4PApt9Z2hCGCphawZtZnHpraYpj?usp=sharing" target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      View All Certificates
+                    </a>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* Volunteer Work */}
+      <section className="py-16 px-6 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Volunteer Work</h2>
+          <Card className="hover:shadow-md transition-shadow">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Users className="h-6 w-6 text-blue-600" />
+                Blue Bits Team - Educational Volunteer
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-700 mb-4">
+                Contributed to educational initiatives by creating comprehensive learning materials 
+                to support fellow students in their academic journey.
+              </p>
+              <div className="bg-blue-50 p-4 rounded-lg">
+                <h4 className="font-semibold text-blue-800 mb-2">Key Contributions:</h4>
+                <ul className="text-sm text-blue-700 space-y-1">
+                  <li className="flex items-start gap-2">
+                    <span className="w-1 h-1 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
+                    Authored 30+ summarized lecture notes
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="w-1 h-1 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
+                    Improved study experience for 50+ students
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="w-1 h-1 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
+                    Enhanced comprehension of complex technical subjects
+                  </li>
+                </ul>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
@@ -301,6 +440,18 @@ const Index = () => {
               <a href="https://github.com/AlharthAlhajHussein?tab=repositories" target="_blank" rel="noopener noreferrer">
                 <Github className="mr-2 h-4 w-4" />
                 GitHub
+              </a>
+            </Button>
+            <Button variant="outline" size="lg" className="bg-white/10 border-white/20 text-white hover:bg-white/20" asChild>
+              <a href="https://www.kaggle.com/alharthalhajhussein" target="_blank" rel="noopener noreferrer">
+                <Trophy className="mr-2 h-4 w-4" />
+                Kaggle
+              </a>
+            </Button>
+            <Button variant="outline" size="lg" className="bg-white/10 border-white/20 text-white hover:bg-white/20" asChild>
+              <a href="https://codeforces.com/profile/AlharthAlhajHossein" target="_blank" rel="noopener noreferrer">
+                <Code className="mr-2 h-4 w-4" />
+                Codeforces
               </a>
             </Button>
           </div>
