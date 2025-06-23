@@ -123,11 +123,7 @@ const Index = () => {
                   <p className="text-gray-600">Data Scientist & Informatics Engineer</p>
                 </div>
               </div>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                I'm a passionate Data Scientist and Informatics Engineering student with a strong foundation 
-                in Machine Learning and AI. Completed a comprehensive 6-month training program at SHAI For AI 
-                company, gaining expertise in data preprocessing, model selection, fine-tuning, and production deployment.
-              </p>
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">I'm a passionate Data Scientist and Informatics Engineering with a strong foundation in Machine Learning and AI. Completed a comprehensive 6-month training program at SHAI For AI company, gaining expertise in data preprocessing, model selection, fine-tuning, and production deployment.</p>
               <div className="grid grid-cols-2 gap-4 text-sm">
                 <div className="flex items-center gap-2">
                   <MapPin className="h-4 w-4 text-blue-600" />
