@@ -115,7 +115,7 @@ const Index = () => {
             <div>
               <div className="flex flex-col items-center md:items-start gap-8 mb-8">
                 <Avatar className="h-40 w-40 ring-4 ring-blue-100 shadow-lg">
-                  <AvatarImage src="/lovable-uploads/6e85f4bb-1d54-4a54-9eee-33cb760b0ba8.png" alt="Alharth Alhaj Hussein" className="object-cover" />
+                  <AvatarImage alt="Alharth Alhaj Hussein" className="object-fill" src="/lovable-uploads/037d267d-2666-42e5-88ef-a51c1a038d72.jpg" />
                   <AvatarFallback className="text-2xl">AH</AvatarFallback>
                 </Avatar>
                 <div className="text-center md:text-left">
