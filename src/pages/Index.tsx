@@ -111,35 +111,35 @@ const Index = () => {
       <section className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">About Me</h2>
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
-              <div className="flex items-center gap-6 mb-6">
-                <Avatar className="h-24 w-24">
-                  <AvatarImage src="/lovable-uploads/6e85f4bb-1d54-4a54-9eee-33cb760b0ba8.png" alt="Alharth Alhaj Hussein" />
-                  <AvatarFallback>AH</AvatarFallback>
+              <div className="flex flex-col items-center md:items-start gap-8 mb-8">
+                <Avatar className="h-40 w-40 ring-4 ring-blue-100 shadow-lg">
+                  <AvatarImage src="/lovable-uploads/6e85f4bb-1d54-4a54-9eee-33cb760b0ba8.png" alt="Alharth Alhaj Hussein" className="object-cover" />
+                  <AvatarFallback className="text-2xl">AH</AvatarFallback>
                 </Avatar>
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-800">Alharth Alhaj Hussein</h3>
-                  <p className="text-gray-600">Data Scientist & Informatics Engineer</p>
+                <div className="text-center md:text-left">
+                  <h3 className="text-2xl font-bold text-gray-800 mb-2">Alharth Alhaj Hussein</h3>
+                  <p className="text-lg text-blue-600 font-medium">Data Scientist & Informatics Engineer</p>
                 </div>
               </div>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">I'm a passionate Data Scientist and Informatics Engineer with a strong foundation in Machine Learning and AI. Completed a comprehensive 6-month training program at SHAI For AI company, gaining expertise in data preprocessing, model selection, fine-tuning, and production deployment.</p>
-              <div className="grid grid-cols-2 gap-4 text-sm">
-                <div className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4 text-blue-600" />
-                  <span>Aleppo, Syria</span>
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed text-center md:text-left">I'm a passionate Data Scientist and Informatics Engineer with a strong foundation in Machine Learning and AI. Completed a comprehensive 6-month training program at SHAI For AI company, gaining expertise in data preprocessing, model selection, fine-tuning, and production deployment.</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm">
+                <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                  <MapPin className="h-5 w-5 text-blue-600 flex-shrink-0" />
+                  <span className="font-medium">Aleppo, Syria</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Calendar className="h-4 w-4 text-blue-600" />
-                  <span>June 5, 2001</span>
+                <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                  <Calendar className="h-5 w-5 text-blue-600 flex-shrink-0" />
+                  <span className="font-medium">June 5, 2001</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Phone className="h-4 w-4 text-blue-600" />
-                  <span>+963 991292874</span>
+                <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                  <Phone className="h-5 w-5 text-blue-600 flex-shrink-0" />
+                  <span className="font-medium">+963 991292874</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Mail className="h-4 w-4 text-blue-600" />
-                  <span>alharth.alhaj.hussein@gmail.com</span>
+                <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                  <Mail className="h-5 w-5 text-blue-600 flex-shrink-0" />
+                  <span className="font-medium">alharth.alhaj.hussein@gmail.com</span>
                 </div>
               </div>
             </div>
