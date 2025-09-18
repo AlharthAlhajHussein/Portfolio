@@ -90,7 +90,7 @@ const Index = () => {
             Alharth Alhaj Hussein
           </h1>
           <p className="text-xl mb-6 opacity-90">
-            Computer Vision Engineer, Data Scientist & Informatics Engineer
+            Informatics Engineer, Data Scientist, Computer Vision Engineer
           </p>
           <p className="text-lg mb-8 max-w-2xl mx-auto leading-relaxed">Passionate about building end-to-end Machine Learning solutions with 10+ projects demonstrating expertise in Keras and TensorFlow, Scikit-learn, and advanced data analysis.</p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -137,7 +137,7 @@ const Index = () => {
                 </Avatar>
                 <div className="text-center md:text-left">
                   <h3 className="text-2xl font-bold text-gray-800 mb-2">Alharth Alhaj Hussein</h3>
-                  <p className="text-lg text-blue-600 font-medium">Computer Vision Engineer, Data Scientist & Informatics Engineer</p>
+                  <p className="text-lg text-blue-600 font-medium">Informatics Engineer, Data Scientist, Computer Vision Engineer</p>
                 </div>
               </div>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed text-center md:text-left">I'm a passionate Data Scientist and Informatics Engineer with a strong foundation in Machine Learning and AI. Completed a comprehensive 6-month training program at SHAI For AI company, gaining expertise in data preprocessing, model selection, and fine-tuning.</p>
