@@ -55,11 +55,14 @@ const Index = () => {
     highlights: ["14K+ tracks analyzed", "18% minority-class recall boost", "Advanced clustering"]
   }];
   const skills = {
-    "Programming": ["Python", "C++", "Java", "SQL", "HTML/CSS"],
-    "ML/AI": ["TensorFlow", "Scikit-learn", "PyTorch", "Computer Vision", "NLP"],
-    "Data Science": ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Power BI", "Data Analysis"],
-    "Tools": ["Git", "MySQL", "VS Code", "Kaggle", "Google Colab"],
-    "Frameworks": ["Django", "PyQt5", "Web Development"]
+    "Languages": ["Python", "C++", "Java", "SQL", "HTML/CSS"],
+    "Tools": ["Git", "VS Code", "Jupiter Notebook", "Kaggle", "Google Colab", "MySQL Workbench", "Microsoft Office"],
+    "Frameworks": ["Django", "FastAPI", "TensorFlow", "Scikit-learn", "PyQt6"],
+    "Models": ["YOLO", "MediaPipe", "OpenPose", "Depth Anythingv2", "BERT", "T5", "GPT-2"],
+    "Domains": ["Machine Learning", "Computer Vision", "NLP", "Data Analysis"],
+    "Data Preparation": ["Data cleaning", "Feature engineering", "Feature scaling", "Data normalization", "Handling imbalanced data", "Data augmentation"],
+    "Data Collection & Reporting": ["Google Forms", "KOBO Toolbox", "Data analysis", "Data visualization", "Power BI", "Pandas", "Matplotlib", "Seaborn"],
+    "Information Management": ["Archiving", "Documentation", "Technical support", "Data management"]
   };
   const achievements = [{
     icon: Award,
