@@ -89,10 +89,10 @@ const Index = () => {
           <p className="text-xl mb-6 opacity-90">
             Data Scientist & Informatics Engineer
           </p>
-          <p className="text-lg mb-8 max-w-2xl mx-auto leading-relaxed">Passionate about building end-to-end Machine Learning solutions with 5+ projects demonstrating expertise in Keras and TensorFlow, Scikit-learn, and advanced data analysis.</p>
+          <p className="text-lg mb-8 max-w-2xl mx-auto leading-relaxed">Passionate about building end-to-end Machine Learning solutions with 10+ projects demonstrating expertise in Keras and TensorFlow, Scikit-learn, and advanced data analysis.</p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <Badge variant="secondary" className="px-4 py-2 text-sm">
-              5+ ML Projects
+              10+ ML Projects
             </Badge>
             <Badge variant="secondary" className="px-4 py-2 text-sm">
               SHAI For AI Graduate
@@ -137,7 +137,7 @@ const Index = () => {
                   <p className="text-lg text-blue-600 font-medium">Data Scientist & Informatics Engineer</p>
                 </div>
               </div>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed text-center md:text-left">I'm a passionate Data Scientist and Informatics Engineer with a strong foundation in Machine Learning and AI. Completed a comprehensive 6-month training program at SHAI For AI company, gaining expertise in data preprocessing, model selection, fine-tuning, and production deployment.</p>
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed text-center md:text-left">I'm a passionate Data Scientist and Informatics Engineer with a strong foundation in Machine Learning and AI. Completed a comprehensive 6-month training program at SHAI For AI company, gaining expertise in data preprocessing, model selection, and fine-tuning.</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm">
                 <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
                   <MapPin className="h-5 w-5 text-blue-600 flex-shrink-0" />
@@ -187,8 +187,8 @@ const Index = () => {
             <CardContent>
               <div className="space-y-4">
                 <p className="text-gray-700 leading-relaxed">
-                  Completed comprehensive training in data science methodologies and production-ready ML systems.
-                  Gained hands-on experience with the complete machine learning pipeline from data preprocessing to deployment.
+                  Completed comprehensive training in data science methodologies and ML systems.
+                  Gained hands-on experience with the complete machine learning pipeline from data preprocessing to model optimization.
                 </p>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
@@ -208,7 +208,7 @@ const Index = () => {
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="w-1 h-1 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
-                        Production deployment and system integration
+                        Model optimization and system integration
                       </li>
                     </ul>
                   </div>
