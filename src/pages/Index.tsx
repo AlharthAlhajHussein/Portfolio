@@ -1,10 +1,24 @@
-import { Github, Linkedin, Mail, Phone, MapPin, Calendar, ExternalLink, Award, BookOpen, Users, Trophy, Code, Database } from "lucide-react";
+import { Github, Linkedin, Mail, Phone, MapPin, Calendar, ExternalLink, Award, BookOpen, Users, Trophy, Code, Database, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 const Index = () => {
   const projects = [{
+    title: "Human Motion Capture System",
+    description: "Real-time 2D and 3D human pose estimation desktop application with depth estimation and motion data streaming",
+    tech: ["Python", "OpenCV", "MediaPipe", "YOLO", "PyQt6"],
+    metrics: "Real-time processing with 3D depth estimation",
+    github: "https://github.com/AlharthAlhajHussein/Human-Motion-Capture-System",
+    highlights: ["Depth Anything V2 integration", "WebSocket streaming", "JSON export functionality"]
+  }, {
+    title: "Handwritten Digit Images Classification",
+    description: "Deep CNN with data augmentation and batch normalization for handwritten digit recognition",
+    tech: ["TensorFlow", "CNN", "Python", "Data Augmentation"],
+    metrics: "97% accuracy achieved",
+    github: "https://github.com/AlharthAlhajHussein/Handwritten-Digit-images-classification",
+    highlights: ["Advanced data augmentation", "Batch normalization", "High accuracy performance"]
+  }, {
     title: "Toxic Comment Classification",
     description: "Multi-label toxic comment classifier using Bi-LSTM with Attention and pre-trained GloVe embeddings",
     tech: ["TensorFlow", "Python", "LSTM", "NLP"],
@@ -22,7 +36,7 @@ const Index = () => {
     title: "Data Science Salaries Analysis",
     description: "Comprehensive EDA with interactive Power BI dashboards analyzing compensation drivers",
     tech: ["Power BI", "Python", "Data Analysis", "Visualization"],
-    metrics: "1000+ salary records analyzed",
+    metrics: "5000+ salary records analyzed",
     github: "https://github.com/AlharthAlhajHussein/EDA-For-Data-Science-Job-Salaries",
     highlights: ["5+ interactive dashboards", "Experience-skill correlation", "Market insights"]
   }, {
@@ -62,7 +76,7 @@ const Index = () => {
   }, {
     icon: Users,
     title: "Blue Bits Team",
-    desc: "Authored 30+ lecture notes for 50+ students"
+    desc: "Authored 30+ lecture notes for 100+ students"
   }];
   return <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       {/* Hero Section */}
@@ -115,7 +129,7 @@ const Index = () => {
             <div>
               <div className="flex flex-col items-center md:items-start gap-8 mb-8">
                 <Avatar className="h-40 w-40 ring-4 ring-blue-100 shadow-lg">
-                  <AvatarImage alt="Alharth Alhaj Hussein" className="object-fill" src="/lovable-uploads/037d267d-2666-42e5-88ef-a51c1a038d72.jpg" />
+                  <AvatarImage alt="Alharth Alhaj Hussein" className="object-cover" src="/lovable-uploads/new-profile-photo.jpg" />
                   <AvatarFallback className="text-2xl">AH</AvatarFallback>
                 </Avatar>
                 <div className="text-center md:text-left">
@@ -302,7 +316,7 @@ const Index = () => {
                     <h3 className="font-semibold text-lg">Bachelor's in Informatics Engineering</h3>
                     <p className="text-gray-600">Aleppo University, Aleppo</p>
                     <p className="text-sm text-gray-500">September 2020 - September 2025</p>
-                    <p className="text-sm font-medium text-green-600">GPA: 80%</p>
+                    <p className="text-sm font-medium text-green-600">GPA: 83%</p>
                   </div>
                   <div>
                     <h4 className="font-medium">Relevant Coursework:</h4>
@@ -337,16 +351,28 @@ const Index = () => {
                     <h3 className="font-semibold">Deep Learning Specialization</h3>
                     <p className="text-sm text-gray-600">Coursera - Stanford/DeepLearning.AI</p>
                   </div>
+                  <div className="border-l-4 border-red-500 pl-4">
+                    <h3 className="font-semibold">Generative AI Specialization</h3>
+                    <p className="text-sm text-gray-600">Coursera - Stanford/DeepLearning.AI</p>
+                  </div>
                   <div className="border-l-4 border-orange-500 pl-4">
                     <h3 className="font-semibold">Blue Bits Volunteering Certificate</h3>
                     <p className="text-sm text-gray-600">Educational Content Creation</p>
                   </div>
-                  <Button variant="outline" size="sm" className="w-full mt-4" asChild>
-                    <a href="https://drive.google.com/drive/folders/1-62BO4PApt9Z2hCGCphawZtZnHpraYpj?usp=sharing" target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="mr-2 h-4 w-4" />
-                      View All Certificates
-                    </a>
-                  </Button>
+                  <div className="flex gap-2 mt-4">
+                    <Button variant="outline" size="sm" className="flex-1" asChild>
+                      <a href="https://drive.google.com/drive/folders/1-62BO4PApt9Z2hCGCphawZtZnHpraYpj?usp=sharing" target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        View Certificates
+                      </a>
+                    </Button>
+                    <Button variant="default" size="sm" className="flex-1" asChild>
+                      <a href="/lovable-uploads/Alharth_Alhaj_Hussein_CV.pdf" download="Alharth_Alhaj_Hussein_CV.pdf">
+                        <Download className="mr-2 h-4 w-4" />
+                        Download Resume
+                      </a>
+                    </Button>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -367,8 +393,8 @@ const Index = () => {
             </CardHeader>
             <CardContent>
               <p className="text-gray-700 mb-4">
-                Contributed to educational initiatives by creating comprehensive learning materials 
-                to support fellow students in their academic journey.
+                More than one year of volunteering with Blue Bits Team, contributing to educational initiatives 
+                by creating comprehensive learning materials to support fellow students in their academic journey.
               </p>
               <div className="bg-blue-50 p-4 rounded-lg">
                 <h4 className="font-semibold text-blue-800 mb-2">Key Contributions:</h4>
@@ -379,7 +405,7 @@ const Index = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="w-1 h-1 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
-                    Improved study experience for 50+ students
+                    Improved study experience for 100+ students
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="w-1 h-1 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
