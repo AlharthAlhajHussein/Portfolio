@@ -140,7 +140,7 @@ const Index = () => {
                   <p className="text-lg text-blue-600 font-medium">Informatics Engineer, Data Scientist, Computer Vision Engineer</p>
                 </div>
               </div>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed text-center md:text-left">I'm a passionate Data Scientist and Informatics Engineer with a strong foundation in Machine Learning and AI. Completed a comprehensive 6-month training program at SHAI For AI company, gaining expertise in data preprocessing, model selection, and fine-tuning.</p>
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed text-center md:text-left">Data Scientist and ML Engineer currently building production-ready AI solutions at Qader, specializing in Computer Vision and NLP. Experienced in designing full ML pipelines, integrating AI APIs, and developing statistical engines for behavioral data analysis. With 10+ end-to-end projects and professional training from SHAI For AI, I transform complex data challenges into scalable solutions.</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm">
                 <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
                   <MapPin className="h-5 w-5 text-blue-600 flex-shrink-0" />
