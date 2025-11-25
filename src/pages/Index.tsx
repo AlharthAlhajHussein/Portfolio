@@ -178,7 +178,31 @@ const Index = () => {
       {/* Professional Experience */}
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Professional Experience</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Work Experience</h2>
+          <div className="space-y-6">
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Database className="h-6 w-6 text-blue-600" />
+                Data Scientist, ML Engineer - Qader
+              </CardTitle>
+              <CardDescription className="text-sm text-gray-500">Qader, Iraq | September 2025 — Till Now</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                <ul className="space-y-2 text-sm text-gray-600">
+                  <li className="flex items-start gap-2">
+                    <span className="w-1 h-1 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
+                    Implemented a full pipeline for cleaning and processing Qader Data and using OpenAI API to apply some complex tasks like correct grammar mistakes and ensuring using language Arabic standard and rewrite in Saudi delict
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="w-1 h-1 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
+                    Planned and Implemented a Statistics Engine for the tests' data on the platform the main goal is to extract information from the behavioral data that we obtain from the tests that the student do
+                  </li>
+                </ul>
+              </div>
+            </CardContent>
+          </Card>
           <Card className="hover:shadow-lg transition-shadow">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
@@ -238,6 +262,7 @@ const Index = () => {
               </div>
             </CardContent>
           </Card>
+          </div>
         </div>
       </section>
 
@@ -319,7 +344,7 @@ const Index = () => {
                     <h3 className="font-semibold text-lg">Bachelor's in Informatics Engineering</h3>
                     <p className="text-gray-600">Aleppo University, Aleppo</p>
                     <p className="text-sm text-gray-500">September 2020 - September 2025</p>
-                    <p className="text-sm font-medium text-green-600">GPA: 83%</p>
+                    <p className="text-sm font-medium text-green-600">GPA: 82%</p>
                   </div>
                   <div>
                     <h4 className="font-medium">Relevant Coursework:</h4>
@@ -355,7 +380,7 @@ const Index = () => {
                     <p className="text-sm text-gray-600">Coursera - Stanford/DeepLearning.AI</p>
                   </div>
                   <div className="border-l-4 border-red-500 pl-4">
-                    <h3 className="font-semibold">Generative AI Specialization</h3>
+                    <h3 className="font-semibold">Generative AI</h3>
                     <p className="text-sm text-gray-600">Coursera - Stanford/DeepLearning.AI</p>
                   </div>
                   <div className="border-l-4 border-orange-500 pl-4">
