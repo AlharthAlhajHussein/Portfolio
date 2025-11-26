@@ -3,6 +3,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+
+const base = import.meta.env.BASE_URL;
+const avatarSrc = base + "lovable-uploads/new-profile-photo.jpg";
+const resumeHref = base + "lovable-uploads/Alharth_Alhaj_Hussein_CV.pdf";
 const Index = () => {
   const projects = [{
     title: "Human Motion Capture System",
@@ -132,7 +136,7 @@ const Index = () => {
             <div>
               <div className="flex flex-col items-center md:items-start gap-8 mb-8">
                 <Avatar className="h-40 w-40 ring-4 ring-blue-100 shadow-lg">
-                  <AvatarImage alt="Alharth Alhaj Hussein" className="object-cover" src="/lovable-uploads/new-profile-photo.jpg" />
+                  <AvatarImage alt="Alharth Alhaj Hussein" className="object-cover" src={avatarSrc} />
                   <AvatarFallback className="text-2xl">AH</AvatarFallback>
                 </Avatar>
                 <div className="text-center md:text-left">
@@ -395,7 +399,7 @@ const Index = () => {
                       </a>
                     </Button>
                     <Button variant="default" size="sm" className="flex-1" asChild>
-                      <a href="/lovable-uploads/Alharth_Alhaj_Hussein_CV.pdf" download="Alharth_Alhaj_Hussein_CV.pdf">
+                      <a href={resumeHref} download="Alharth_Alhaj_Hussein_CV.pdf">
                         <Download className="mr-2 h-4 w-4" />
                         Download Resume
                       </a>
