@@ -1,73 +1,64 @@
-# Welcome to your Lovable project
+# Portfolio – Alharth Alhaj Hussein
 
-## Project info
+Live at: https://alharthalhajhussein.github.io/Portfolio/
 
-**URL**: https://lovable.dev/projects/af07715a-210d-458d-a96b-1ebc4d6f3d63
+## Overview
+Personal portfolio built with Vite + React + TypeScript and shadcn/ui. It showcases projects, experience, and skills with responsive styling and social/share metadata tuned for GitHub Pages hosting.
 
-## How can I edit this code?
+## Features
+- Modern React SPA with routing and shadcn/ui components
+- Project highlights, experience, skills, and contact actions
+- Responsive Tailwind styling with gradient theming
+- SEO/social cards: custom title, description, OG/Twitter tags, favicon
+- GitHub Pages CI/CD (build and deploy on every push to `main`)
 
-There are several ways of editing your application.
+## Tech Stack
+- React 18, TypeScript, Vite
+- Tailwind CSS, shadcn/ui (Radix)
+- React Query, React Router
 
-**Use Lovable**
+## Getting Started
+Prerequisites: Node 18+ (Node 20 recommended) and npm.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/af07715a-210d-458d-a96b-1ebc4d6f3d63) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+git clone https://github.com/<username>/Portfolio.git
+cd Portfolio
+npm install
 ```
 
-**Edit a file directly in GitHub**
+### Development
+```bash
+npm run dev         # start dev server
+```
+Open the shown URL (defaults to http://localhost:5173 or the printed host/port).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build
+```bash
+npm run build       # produce production build in dist/
+npm run preview     # serve the built site locally for inspection
+```
 
-**Use GitHub Codespaces**
+### Lint
+```bash
+npm run lint
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Deployment (GitHub Pages)
+- Vite base path is set to `/Portfolio/` in `vite.config.ts` to match the repo name. If you rename the repo or deploy at a different path, update `base` accordingly.
+- GitHub Actions workflow: `.github/workflows/jekyll-gh-pages.yml` builds and deploys `dist` to Pages on pushes to `main`.
+- GitHub → Settings → Pages: source should be “GitHub Actions”.
+- To deploy changes: commit to `main` and push; the workflow publishes automatically.
 
-## What technologies are used for this project?
+## Assets and Metadata
+- Public assets (images, resume) live in `public/lovable-uploads/`.
+- Favicon lives at `public/portfolio_icon.ico` and is referenced in `index.html`.
+- Social/share metadata (title, description, OG/Twitter tags) is defined in `index.html`. Update those fields if you change branding or the deployed URL.
 
-This project is built with:
+## Project Structure (high level)
+- `src/` – app code (pages, components, styles)
+- `public/` – static assets served as-is
+- `vite.config.ts` – Vite config and base path
+- `.github/workflows/` – CI/CD for GitHub Pages
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/af07715a-210d-458d-a96b-1ebc4d6f3d63) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Contact
+Alharth Alhaj Hussein — alharth.alhaj.hussein@gmail.com
