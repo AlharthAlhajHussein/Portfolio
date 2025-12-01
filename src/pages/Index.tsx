@@ -6,7 +6,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const base = import.meta.env.BASE_URL;
 const avatarSrc = base + "lovable-uploads/new-profile-photo.jpg";
-const resumeHref = base + "lovable-uploads/Alharth_Alhaj_Hussein_CV.pdf";
+const resumeHref = base + "lovable-uploads/Alharth_Alhaj_Hussein.pdf";
 const Index = () => {
   const projects = [{
     title: "Human Motion Capture System",
@@ -399,7 +399,7 @@ const Index = () => {
                       </a>
                     </Button>
                     <Button variant="default" size="sm" className="flex-1" asChild>
-                      <a href={resumeHref} download="Alharth_Alhaj_Hussein_CV.pdf">
+                      <a href={resumeHref} download="Alharth_Alhaj_Hussein.pdf">
                         <Download className="mr-2 h-4 w-4" />
                         Download Resume
                       </a>
