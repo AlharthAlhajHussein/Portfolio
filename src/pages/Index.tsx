@@ -8,7 +8,16 @@ const base = import.meta.env.BASE_URL;
 const avatarSrc = base + "lovable-uploads/new-profile-photo.jpg";
 const resumeHref = base + "lovable-uploads/Alharth_Alhaj_Hussein.pdf";
 const Index = () => {
-  const projects = [{
+  const projects = [
+  {
+    title: "Mini RAG Engine",
+    description: "A Retrieval-Augmented Generation (RAG) application that processes user-uploaded files by chunking and embedding text into vectors. It performs semantic similarity searches to retrieve relevant document chunks and leverages an LLM to accurately answer user queries based on the context.",
+    tech: ["FastAPI", "PostgreSQL", "Gemini SDK", "Langchain", "Qdrant"],
+    metrics: "LLM-powered question answering with high relevance and accuracy",
+    github: "https://github.com/AlharthAlhajHussein/mini-rag-app",
+    highlights: ["File upload and processing", "Semantic search with vector embeddings", "LLM-powered question answering"]
+  },
+  {
     title: "Human Motion Capture System",
     description: "Real-time 2D and 3D human pose estimation desktop application with depth estimation and motion data streaming",
     tech: ["Python", "OpenCV", "MediaPipe", "YOLO", "PyQt6"],
@@ -61,6 +70,7 @@ const Index = () => {
   const skills = {
     "Languages": ["Python", "C++", "Java", "SQL", "HTML/CSS"],
     "Tools": ["Git", "VS Code", "Jupiter Notebook", "Kaggle", "Google Colab", "MySQL Workbench", "Microsoft Office"],
+    "Cloud & DevOps": ["Google Cloud Platform (Cloud Run, Cloud SQL, Compute Engine VM, Pub/Sub)", "Docker", "CI/CD with GitHub Actions"],
     "Frameworks": ["Django", "FastAPI", "TensorFlow", "Scikit-learn", "PyQt6"],
     "Models": ["YOLO", "MediaPipe", "OpenPose", "Depth Anythingv2", "BERT", "T5", "GPT-2"],
     "Domains": ["Machine Learning", "Computer Vision", "NLP", "Data Analysis"],
@@ -94,15 +104,13 @@ const Index = () => {
             Alharth Alhaj Hussein
           </h1>
           <p className="text-xl mb-6 opacity-90">
-            Informatics Engineer, Data Scientist, Computer Vision Engineer
+            Software Engineer, AI Engineer
+
           </p>
-          <p className="text-lg mb-8 max-w-2xl mx-auto leading-relaxed">Passionate about building end-to-end Machine Learning solutions with 10+ projects demonstrating expertise in Keras and TensorFlow, Scikit-learn, and advanced data analysis.</p>
+          <p className="text-lg mb-8 max-w-2xl mx-auto leading-relaxed">Dedicated to creating innovative AI solutions with a focus on efficiency and accuracy.</p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <Badge variant="secondary" className="px-4 py-2 text-sm">
               10+ ML Projects
-            </Badge>
-            <Badge variant="secondary" className="px-4 py-2 text-sm">
-              SHAI For AI Graduate
             </Badge>
             <Badge variant="secondary" className="px-4 py-2 text-sm">
               Kaggle Competitor
@@ -141,10 +149,10 @@ const Index = () => {
                 </Avatar>
                 <div className="text-center md:text-left">
                   <h3 className="text-2xl font-bold text-gray-800 mb-2">Alharth Alhaj Hussein</h3>
-                  <p className="text-lg text-blue-600 font-medium">Informatics Engineer, Data Scientist, Computer Vision Engineer</p>
+                  <p className="text-lg text-blue-600 font-medium">Software Engineer, AI Engineer</p>
                 </div>
               </div>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed text-center md:text-left">Data Scientist and ML Engineer currently building production-ready AI solutions at Qader, specializing in Computer Vision and NLP. Experienced in designing full ML pipelines, integrating AI APIs, and developing statistical engines for behavioral data analysis. With 10+ end-to-end projects and professional training from SHAI For AI, I transform complex data challenges into scalable solutions.</p>
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed text-center md:text-left">Software & AI Engineer passionate about building intelligent, scalable systems. I specialize in developing and deploying production-ready AI Agents and RAG engines. Experienced with Gemini, OpenAI SDKs, and LangChain, I focus on bridging the gap between advanced machine learning concepts and robust software architecture.</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm">
                 <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
                   <MapPin className="h-5 w-5 text-blue-600 flex-shrink-0" />
@@ -503,7 +511,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 px-6 bg-gray-900 text-white text-center">
         <p className="text-sm opacity-75">
-          © 2024 Alharth Alhaj Hussein. Built with passion for data science and machine learning.
+          © 2026 Alharth Alhaj Hussein. Built with passion for data science and machine learning.
         </p>
       </footer>
     </div>;
