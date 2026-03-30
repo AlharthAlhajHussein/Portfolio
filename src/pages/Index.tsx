@@ -69,7 +69,7 @@ const Index = () => {
   }];
   const skills = {
     "Languages": ["Python", "C++", "Java", "SQL", "HTML/CSS"],
-    "Tools": ["Git", "VS Code", "Jupiter Notebook", "Kaggle", "Google Colab", "MySQL Workbench", "Microsoft Office"],
+    "Tools": ["Git", "PostgreSQL", "Redis", "Celery", "MySQL Workbench", "VS Code", "Jupiter Notebook", "Kaggle", "Google Colab", "Microsoft Office"],
     "Cloud & DevOps": ["Google Cloud Platform (Cloud Run, Cloud SQL, Compute Engine VM, Pub/Sub)", "Docker", "CI/CD with GitHub Actions"],
     "Frameworks": ["Django", "FastAPI", "TensorFlow", "Scikit-learn", "PyQt6"],
     "Models": ["YOLO", "MediaPipe", "OpenPose", "Depth Anythingv2", "BERT", "T5", "GPT-2"],
